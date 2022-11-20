@@ -1,0 +1,157 @@
+// main: ../style.less
+
+.header {
+	background-image: url(../images/header-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+
+	position: relative;
+}
+
+.header::before {
+	content: "";
+
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	z-index: 2;
+
+	background-image: url(../images/header-decor.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	min-height: 456px;
+
+	transform: translateY(30%);
+}
+
+.header::after {
+	content: "";
+
+	position: absolute;
+	bottom: 80px;
+	left: 0;
+	right: 0;
+	z-index: 3;
+
+	background-image: url(../images/header-decor.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	height: 456px;
+
+	transform: translateY(85%) scale(1, -1);
+}
+
+.header__top {
+	display: flex;
+	align-items: center;
+	padding: 57px 0;
+	gap: 100px;
+	justify-content: flex-end;
+
+	font-family: 'Comfortaa', cursive;
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: 700;
+}
+
+.logo path {
+	transition: fill .3s ease;
+}
+
+.logo:hover path {
+	fill: @blue;
+	transition: fill .3s ease;
+}
+
+.header__btn {
+	padding: 12px 71px;
+
+	color: @white;
+	background-color: @black;
+	text-transform: uppercase;
+
+	border: none;
+	cursor: pointer;
+}
+
+.header__content {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	min-height: calc(100vh - 161px);
+	position: relative;
+}
+
+.header__content-box {
+	max-width: 550px;
+	text-align: center;
+	margin-right: 30px;
+
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+	color: @white;
+}
+
+.header__title {
+	margin-bottom: 20px;
+
+	font-size: 64px;
+	line-height: 71px;
+
+	text-transform: uppercase;
+}
+
+.header__text {
+	margin-bottom: 20px;
+
+	font-size: 24px;
+	line-height: 27px;
+}
+
+.header__decor-text {
+	position: absolute;
+	bottom: 10px;
+
+
+	color: fade(@blue, 30%);
+}
+
+.header__decor-text--one,
+.header__decor-text--two {
+	font-family: 'Comfortaa', cursive;
+	font-size: 130px;
+	line-height: 145px;
+}
+
+.header__decor-text--one {
+	right: 145px;
+	bottom: 100px;
+	z-index: 1;
+}
+
+.header__decor-text--two {
+	left: 265px;
+	bottom: 0;
+	z-index: 4;
+}
+
+.header__decor-text--three {
+	max-width: 360px;
+	right: 145px;
+	z-index: 4;
+
+	text-align: center;
+
+	font-size: 32px;
+	line-height: 39px;
+	font-weight: 300;
+	font-style: italic;
+}
