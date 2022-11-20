@@ -10,14 +10,15 @@
 	position: relative;
 }
 
-.header::before {
+.header::before,
+.header::after {
 	content: "";
 
 	position: absolute;
 	bottom: 0px;
 	left: 0;
 	right: 0;
-	z-index: 2;
+
 
 	background-image: url(../images/header-decor.svg);
 	background-size: cover;
@@ -25,27 +26,16 @@
 	background-position: center;
 
 	min-height: 456px;
+}
 
+.header::before {
+	z-index: 2;
 	transform: translateY(30%);
 }
 
 .header::after {
-	content: "";
-
-	position: absolute;
-	bottom: 80px;
-	left: 0;
-	right: 0;
 	z-index: 3;
-
-	background-image: url(../images/header-decor.svg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-
-	height: 456px;
-
-	transform: translateY(85%) scale(1, -1);
+	transform: translateY(70%) scale(1, -1);
 }
 
 .header__top {
