@@ -1,0 +1,73 @@
+// main: ../style.less
+
+.footer {
+	padding: 100px 0 80px;
+	background-color: @black;
+	color: @white;
+}
+
+.footer__top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__title {
+	margin-bottom: 27px;
+}
+
+.footer__form {
+	max-width: 500px;
+
+}
+
+.footer__form-input {
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 57px;
+
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid fade(@white, 40%);
+	color: @white;
+}
+
+.footer__form-input::placeholder {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+	opacity: 0.4;
+}
+
+.footer__form-btn {
+	margin-bottom: 110px;
+
+	background-color: @white;
+	padding: 10px 66px;
+	border: none;
+	cursor: pointer;
+
+	font-family: 'Comfortaa', cursive;
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: 700;
+	color: @black;
+	text-transform: uppercase;
+}
+
+.footer__social-title {
+	margin-bottom: 28px;
+	font-weight: 700;
+}
+
+.footer__gallery {
+	display: grid;
+	gap: 52px;
+	grid-template-columns: repeat(4, 1fr);
+	margin-bottom: 50px;
+}
+
+.footer__menu-list {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+}
