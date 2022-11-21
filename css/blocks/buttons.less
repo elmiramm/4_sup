@@ -11,9 +11,28 @@
 	position: absolute;
 }
 
+.popup-btn path,
+.popup-btn circle {
+	transition: all 0.2s linear;
+}
+
+.popup-btn:hover path {
+	fill: @green;
+}
+
+.popup-btn:hover circle {
+	stroke: @green;
+}
+
 .popup-btn span {
 	padding-top: 12px;
 	display: block;
 
 	color: @white;
+
+	transition: color 0.2s linear;
+}
+
+.popup-btn:hover span {
+	color: @blue;
 }
