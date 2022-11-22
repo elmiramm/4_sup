@@ -99,3 +99,49 @@
 	background-color: @green;
 	color: @black;
 }
+
+@media (max-width: 1230px) {
+	.buy__inner {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.buy__img {
+		order: -1;
+		max-width: 100%;
+	}
+
+	.buy__content {
+		width: 100%;
+	}
+
+	.buy__price {
+		pointer-events: none;
+	}
+
+	.buy__item {
+		width: 100%;
+		max-width: 600px;
+	}
+
+}
+
+@media (max-width: 850px) {
+	.buy__price {
+		bottom: auto;
+		top: -350px;
+	}
+}
+
+
+@media (max-width: 500px) {
+	.buy__price {
+		width: 170px;
+		height: 168px;
+		top: -185px;
+	}
+}
+
+// @media (max-width: 1000px) {
+
+// }
